@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Rota Certa</string>
+    <string name="title_activity_main">Rota Certa</string>
+    <string name="package_name">com.aczaffalon.rotacerta</string>
+    <string name="custom_url_scheme">com.aczaffalon.rotacerta</string>
+</resources>

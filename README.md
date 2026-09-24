@@ -1,4 +1,4 @@
-# 🚚 Rota Certa Pro
+## 🚚 Rota Certa Pro
 
 Aplicação mobile-first para cálculo, registro e acompanhamento de rotas de entregadores.
 
@@ -109,36 +109,40 @@ Para validar o projeto antes de enviar alterações:
 npm test -- --run
 npm run lint
 npm run build
-
 ```
 
 ## ▶️ Executando o projeto localmente
+
 ### Pré-requisitos
 - Node.js 22+
 - npm
 
 Clone o repositório:
-
 ```bash
 git clone https://github.com/aczaffalon/rotaCertaPro.git
 ```
 
 Entre na pasta:
-
+```bash
 cd rotaCertaPro
+```
 
 Instale as dependências:
-
+```bash
 npm ci
+```
 
 Inicie o ambiente de desenvolvimento:
-
+```bash
 npm run dev
+```
 
 O projeto está configurado para utilizar:
-
+```bash
 http://localhost:3000
-📱 Android
+```
+
+## 📱 Android
 
 O projeto utiliza Capacitor para integração com Android.
 
@@ -153,7 +157,7 @@ android/keystore.properties
 
 Esses arquivos não devem ser versionados no Git.
 
-🔒 Privacidade
+## 🔒 Privacidade
 
 As informações utilizadas pelo aplicativo são armazenadas localmente no dispositivo.
 
@@ -166,7 +170,7 @@ autenticação;
 banco de dados remoto;
 servidor próprio;
 armazenamento em nuvem.
-🗂️ Estrutura principal
+## 🗂️ Estrutura principal
 src/
 ├── components/
 ├── hooks/
@@ -181,7 +185,7 @@ tests/
 
 A estrutura procura manter interface, regras de negócio, persistência e utilitários separados para facilitar manutenção e evolução do projeto.
 
-🚧 Roadmap
+## 🚧 Roadmap
 
 Entre as próximas evoluções planejadas estão:
 
@@ -195,7 +199,7 @@ rentabilidade por rota;
 rentabilidade por período;
 relatórios financeiros mais completos;
 suporte a múltiplos veículos.
-💡 Origem do projeto
+## 💡 Origem do projeto
 
 O Rota Certa Pro surgiu a partir da experiência prática com entregas.
 
@@ -207,7 +211,7 @@ O projeto passou então a evoluir de uma calculadora simples para uma aplicaçã
 
 Além da utilidade prática, o projeto também faz parte do meu desenvolvimento profissional na área de software.
 
-🧭 Evolução do projeto
+## 🧭 Evolução do projeto
 
 O desenvolvimento do Rota Certa Pro envolve práticas como:
 
@@ -222,13 +226,13 @@ controle de versão com Git e GitHub.
 
 A intenção é continuar evoluindo o projeto conforme novas necessidades forem identificadas no uso real.
 
-📌 Status
+## 📌 Status
 
 Em desenvolvimento ativo.
 
 As funcionalidades disponíveis atualmente formam a base para as próximas etapas do projeto.
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
 Adriano Zaffalon
 

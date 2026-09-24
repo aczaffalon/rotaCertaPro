@@ -37,7 +37,9 @@ vi.mock('@capacitor/share', () => ({
 }));
 
 vi.mock('jspdf', () => ({
-  default: vi.fn(() => documentMocks),
+  default: vi.fn(function () {
+  return documentMocks;
+}),
 }));
 
 vi.mock('jspdf-autotable', () => ({

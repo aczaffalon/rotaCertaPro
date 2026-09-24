@@ -30,6 +30,10 @@ export type AppConfig = {
   costPerKm: number;
   vehicleConsumption: number;
   fuelPrice: number;
+  vehicleName: string;
+  vehicleType: 'motorcycle' | 'car' | 'van' | 'other';
+  fuelType: string;
+  vehicleOdometer: number;
 };
 
 export type ConfigContextType = {

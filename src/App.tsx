@@ -1,11 +1,12 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Calculator as CalculatorIcon, Sun, Moon, Monitor, Settings, Home, History as HistoryIcon } from 'lucide-react';
+import { Calculator as CalculatorIcon, Sun, Moon, Monitor, Settings, Home, History as HistoryIcon, Car } from 'lucide-react';
 import { Calculator } from './components/Calculator';
 import { HistoryView } from './components/HistoryView';
 import { SettingsModal } from './components/SettingsModal';
 import { Dashboard } from './components/Dashboard';
 import { ReportModal } from './components/ReportModal';
 import { PrivacyPolicyModal } from './components/PrivacyPolicyModal';
+import { VehicleView } from './components/VehicleView';
 import { useTheme } from './hooks/useTheme';
 import { useHistory } from './hooks/useHistory';
 import { useConfig } from './hooks/useConfig';
@@ -15,7 +16,7 @@ import { ClosureType, RouteHistory } from './types';
 import { exportCsvFile } from './services/fileExportService';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'calculator' | 'history'>('dashboard');
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'calculator' | 'history' | 'vehicle'>('dashboard');
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [reportPeriod, setReportPeriod] = useState<ClosureType>('weekly');
@@ -263,6 +264,8 @@ export default function App() {
             saveError={saveError}
             saveSuccess={saveSuccess}
           />
+        ) : activeTab === 'vehicle' ? (
+          <VehicleView config={config} onSave={updateConfig} />
         ) : (
           <HistoryView
             history={history}
@@ -287,11 +290,12 @@ export default function App() {
           aria-label="Navegação principal"
           className="fixed bottom-4 left-1/2 z-40 w-[calc(100%-2rem)] max-w-2xl -translate-x-1/2 rounded-2xl border border-zinc-200 bg-white/95 p-2 shadow-xl shadow-zinc-900/10 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/95"
         >
-          <div className="grid grid-cols-4 gap-1">
+          <div className="grid grid-cols-5 gap-1">
             {[
               { id: 'dashboard' as const, label: 'Início', icon: Home },
               { id: 'calculator' as const, label: 'Calcular', icon: CalculatorIcon },
               { id: 'history' as const, label: 'Histórico', icon: HistoryIcon },
+              { id: 'vehicle' as const, label: 'Veículo', icon: Car },
               { id: 'settings' as const, label: 'Configurações', icon: Settings },
             ].map(({ id, label, icon: Icon }) => {
               const isActive = id === 'settings' ? isSettingsOpen : activeTab === id;

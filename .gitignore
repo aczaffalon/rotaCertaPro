@@ -4,3 +4,7 @@ dist/
 .env.*
 *.log
 .DS_Store
+android/keystore.properties
+android/app/*.jks
+android/app/*.keystore
+android/app/*.p12

@@ -8,6 +8,10 @@ const DEFAULT_CONFIG: AppConfig = {
   costPerKm: 0,
   vehicleConsumption: 0,
   fuelPrice: 0,
+  vehicleName: '',
+  vehicleType: 'motorcycle',
+  fuelType: 'Gasolina',
+  vehicleOdometer: 0,
 };
 
 const STORAGE_KEYS = {

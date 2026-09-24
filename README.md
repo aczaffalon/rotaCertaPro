@@ -108,9 +108,11 @@ Para validar o projeto antes de enviar alterações:
 ```bash
 npm test -- --run
 npm run lint
-'npm run build':
+npm run build
 
-▶️ Executando o projeto localmente
+---
+
+## ▶️ Executando o projeto localmente
 Pré-requisitos
 Node.js 22+
 npm

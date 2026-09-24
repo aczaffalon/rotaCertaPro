@@ -150,10 +150,12 @@ Arquivos relacionados a assinatura e credenciais do aplicativo devem permanecer 
 
 Exemplos:
 
+```text
 android/keystore.properties
 *.jks
 *.keystore
 *.p12
+```
 
 Esses arquivos não devem ser versionados no Git.
 
@@ -163,14 +165,21 @@ As informações utilizadas pelo aplicativo são armazenadas localmente no dispo
 
 O usuário pode exportar e importar manualmente um backup em formato JSON.
 
+
+```markdown
 Atualmente, o projeto não depende de:
 
-conta online;
-autenticação;
-banco de dados remoto;
-servidor próprio;
-armazenamento em nuvem.
+- conta online;
+- autenticação;
+- banco de dados remoto;
+- servidor próprio;
+- armazenamento em nuvem.
+```
+
 ## 🗂️ Estrutura principal
+## 🗂️ Estrutura principal
+
+```text
 src/
 ├── components/
 ├── hooks/
@@ -182,23 +191,28 @@ tests/
 ├── components/
 ├── services/
 └── utils/
+```
 
 A estrutura procura manter interface, regras de negócio, persistência e utilitários separados para facilitar manutenção e evolução do projeto.
 
+
+```markdown
 ## 🚧 Roadmap
 
 Entre as próximas evoluções planejadas estão:
 
-configuração do veículo utilizado nas entregas;
-controle de abastecimentos;
-registro de despesas do veículo;
-controle de manutenção;
-reserva de manutenção por quilômetro;
-cálculo de custo operacional por km;
-rentabilidade por rota;
-rentabilidade por período;
-relatórios financeiros mais completos;
-suporte a múltiplos veículos.
+- configuração do veículo utilizado nas entregas;
+- controle de abastecimentos;
+- registro de despesas do veículo;
+- controle de manutenção;
+- reserva de manutenção por quilômetro;
+- cálculo de custo operacional por km;
+- rentabilidade por rota;
+- rentabilidade por período;
+- relatórios financeiros mais completos;
+- suporte a múltiplos veículos.
+```
+
 ## 💡 Origem do projeto
 
 O Rota Certa Pro surgiu a partir da experiência prática com entregas.
@@ -215,15 +229,15 @@ Além da utilidade prática, o projeto também faz parte do meu desenvolvimento 
 
 O desenvolvimento do Rota Certa Pro envolve práticas como:
 
-evolução incremental de funcionalidades;
-refatoração;
-testes automatizados;
-organização do código;
-persistência local;
-responsividade;
-desenvolvimento mobile-first;
-controle de versão com Git e GitHub.
-
+- evolução incremental de funcionalidades;
+- refatoração;
+- testes automatizados;
+- organização do código;
+- persistência local;
+- responsividade;
+- desenvolvimento mobile-first;
+- controle de versão com Git e GitHub.
+  
 A intenção é continuar evoluindo o projeto conforme novas necessidades forem identificadas no uso real.
 
 ## 📌 Status
@@ -234,11 +248,11 @@ As funcionalidades disponíveis atualmente formam a base para as próximas etapa
 
 ## 👨‍💻 Autor
 
-Adriano Zaffalon
+**Adriano Zaffalon**
 
-Desenvolvedor de Software Júnior
+Desenvolvedor de Software Júnior  
 Formado em Análise e Desenvolvimento de Sistemas
 
-GitHub: @aczaffalon
+GitHub: [@aczaffalon](https://github.com/aczaffalon)
 
-LinkedIn: Adriano Zaffalon
+LinkedIn: [Adriano Zaffalon](https://www.linkedin.com/in/adrianozaffalon)

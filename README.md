@@ -166,9 +166,10 @@ As informações utilizadas pelo aplicativo são armazenadas localmente no dispo
 O usuário pode exportar e importar manualmente um backup em formato JSON.
 
 
-```markdown
+
 Atualmente, o projeto não depende de:
 
+```markdown
 - conta online;
 - autenticação;
 - banco de dados remoto;
@@ -176,7 +177,6 @@ Atualmente, o projeto não depende de:
 - armazenamento em nuvem.
 ```
 
-## 🗂️ Estrutura principal
 ## 🗂️ Estrutura principal
 
 ```text
@@ -195,9 +195,8 @@ tests/
 
 A estrutura procura manter interface, regras de negócio, persistência e utilitários separados para facilitar manutenção e evolução do projeto.
 
-
-```markdown
 ## 🚧 Roadmap
+```markdown
 
 Entre as próximas evoluções planejadas estão:
 

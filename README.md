@@ -1,4 +1,4 @@
-## 🚚 Rota Certa Pro
+# 🚚 Rota Certa Pro
 
 Aplicação mobile-first para cálculo, registro e acompanhamento de rotas de entregadores.
 
@@ -138,7 +138,7 @@ npm run dev
 ```
 
 O projeto está configurado para utilizar:
-```bash
+```text
 http://localhost:3000
 ```
 

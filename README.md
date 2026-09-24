@@ -108,21 +108,4 @@ Para validar o projeto antes de enviar alterações:
 ```bash
 npm test -- --run
 npm run lint
-npm run build## 🧪 Qualidade e testes
-
-O projeto possui testes automatizados para partes importantes da aplicação, incluindo:
-
-- regras de cálculo;
-- períodos de fechamento;
-- persistência local;
-- exportação de arquivos;
-- geração de PDF;
-- estatísticas;
-- componentes.
-
-Para validar o projeto antes de enviar alterações:
-
-```bash
-npm test -- --run
-npm run lint
 npm run build

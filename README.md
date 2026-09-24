@@ -113,13 +113,15 @@ npm run build
 ```
 
 ## ▶️ Executando o projeto localmente
-Pré-requisitos
-Node.js 22+
-npm
+### Pré-requisitos
+- Node.js 22+
+- npm
 
 Clone o repositório:
 
+```bash
 git clone https://github.com/aczaffalon/rotaCertaPro.git
+```
 
 Entre na pasta:
 

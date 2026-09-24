@@ -110,7 +110,7 @@ npm test -- --run
 npm run lint
 npm run build
 
----
+```
 
 ## ▶️ Executando o projeto localmente
 Pré-requisitos

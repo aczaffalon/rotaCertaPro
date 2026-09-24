@@ -165,17 +165,14 @@ As informações utilizadas pelo aplicativo são armazenadas localmente no dispo
 
 O usuário pode exportar e importar manualmente um backup em formato JSON.
 
-
-
 Atualmente, o projeto não depende de:
 
-```markdown
 - conta online;
 - autenticação;
 - banco de dados remoto;
 - servidor próprio;
 - armazenamento em nuvem.
-```
+
 
 ## 🗂️ Estrutura principal
 
@@ -196,7 +193,6 @@ tests/
 A estrutura procura manter interface, regras de negócio, persistência e utilitários separados para facilitar manutenção e evolução do projeto.
 
 ## 🚧 Roadmap
-```markdown
 
 Entre as próximas evoluções planejadas estão:
 
@@ -210,7 +206,7 @@ Entre as próximas evoluções planejadas estão:
 - rentabilidade por período;
 - relatórios financeiros mais completos;
 - suporte a múltiplos veículos.
-```
+
 
 ## 💡 Origem do projeto
 
